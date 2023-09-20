@@ -67,4 +67,8 @@ body{
             color: rgba($color: red, $alpha: .9);
         }
     }
+    #playground{
+        display: none;
+        visibility: none;
+    }
 }

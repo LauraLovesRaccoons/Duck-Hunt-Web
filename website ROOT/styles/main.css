@@ -47,4 +47,8 @@ body {
     font-size: 4rem;
     color: rgba(255, 0, 0, 0.9);
   }
+  #playground {
+    display: none;
+    visibility: none;
+  }
 }/*# sourceMappingURL=main.css.map */
