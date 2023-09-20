@@ -12,15 +12,21 @@ header {
 body {
   background-color: rgba(0, 0, 0, 0.88);
   cursor: not-allowed;
-  padding: 2vh;
+  padding: 5vh;
 }
 
-.wrapper {
-  height: 95vh;
-  width: 95vw;
+#playground {
   background-color: transparent;
   background: url("../images/background/background.png") no-repeat center/cover;
   cursor: url(../images/cursors/Crosshair\ Gray.cur), auto;
+  height: 600px;
+  width: 800px;
+  border: 1px black solid;
+  margin: auto;
+}
+
+#duck1 {
+  position: relative;
 }
 
 @media screen and (max-width: 600px) {
