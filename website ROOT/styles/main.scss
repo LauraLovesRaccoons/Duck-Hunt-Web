@@ -19,21 +19,30 @@ body{
     // height: 95vh;
     // width: 95vw;
     cursor: not-allowed;
-    padding: 2vh;
+    padding: 5vh;
 }
 
-.wrapper{
+#playground{
     // margin: 1%;
     // height: 100%;
     // width: 100%;
-    height: 95vh;
-    width: 95vw;
+    //height: 95vh;
+    //width: 95vw;
     background-color: transparent; // this should be hidden
     // background-image: url('../images/background/background.png');
     // background-repeat: no-repeat;
     // background-size: cover;
     background: url('../images/background/background.png') no-repeat center/cover;
     cursor: url(../images/cursors/Crosshair\ Gray.cur), auto;
+    // 4:3 screen
+    height: 600px;
+    width: 800px;
+    border: 1px black solid;
+    margin: auto;
+}
+
+#duck1{
+    position: relative;
 }
 
 
