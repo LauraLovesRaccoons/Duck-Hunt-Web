@@ -31,3 +31,9 @@ setInterval(moveDucks, 1000)
     randomPosition("duck3");
  }
 
+
+// Doggo dead function
+let dogShot = document.getElementById("dog");
+dogShot.addEventListener("click", function(){
+    alert("You shot a dog! YOU MONSTER!");
+})
