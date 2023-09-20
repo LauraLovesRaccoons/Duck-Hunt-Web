@@ -3,6 +3,7 @@
 
 let posTop = 0;
 let posLeft = 0;
+let score = 0;  // scorecounter
 
 // let duck1 = document.getElementById("duck1");
 
@@ -34,6 +35,20 @@ setInterval(moveDucks, 1000)
 
 // Doggo dead function
 let dogShot = document.getElementById("dog");
-dogShot.addEventListener("click", function(){
+dogShot.addEventListener("click", function (){
     alert("You shot a dog! YOU MONSTER!");
+    let dogShotSound = new Audio('./sounds/dog-laughing.mp3');   // I'm in the same folder as index.html
+    dogShotSound.play();
+    score= score-10000;
+    console.log("Times ducks hit: "+score);
+})
+
+// duck makes a sound when shoot
+let duckShot = document.getElementsByClassName("duckS");
+duckShot.addEventListener("click", function(){
+    let duckCaughtSound = new Audio('./sounds/duck-caught.mp3');
+    duckCaughtSound.play();
+    alert("DUCK");
+    score++;
+    console.log("Times ducks hit: "+score);
 })
