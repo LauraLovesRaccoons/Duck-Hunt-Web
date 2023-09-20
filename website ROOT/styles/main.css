@@ -24,6 +24,7 @@ body {
   border: 1px black solid;
   margin: auto;
   position: relative;
+  z-index: 1;
 }
 
 .duckS {
@@ -36,6 +37,7 @@ body {
   background: url("../images/sprites/flying_duck.png") no-repeat;
   background-size: 50px;
   border: none;
+  z-index: 2;
 }
 
 #duck1 {
@@ -53,6 +55,19 @@ body {
   top: 50px;
   left: 50px;
   display: none;
+}
+
+#dog {
+  position: absolute;
+  top: 360px;
+  left: 350px;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  cursor: url(../images/cursors/Crosshair\ Purple.cur), auto;
+  background: url("../images/sprites/laughing_dog.png") no-repeat;
+  background-size: cover;
+  border: none;
 }
 
 @media screen and (max-width: 600px) {

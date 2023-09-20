@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+// vars 
+
+
 // Desktop First and probably only
 
 // this is needed for the mobile warning message
@@ -40,6 +43,7 @@ body{
     border: 1px black solid;
     margin: auto;
     position: relative; //needed for the target
+    z-index: 1;
 }
 
 .duckS{
@@ -53,6 +57,7 @@ body{
     background-size: 50px;
     border: none;
     //border: 1px solid;  // debug
+    z-index: 2;
 }
 
 #duck1{
@@ -76,6 +81,19 @@ body{
     display: none;
 }
 
+#dog{
+    position: absolute; // now it should be bound to it's parent
+    top: 300px+60px;
+    left: 400px-50px;
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    cursor: url(../images/cursors/Crosshair\ Purple.cur), auto;
+    background: url('../images/sprites/laughing_dog.png') no-repeat;
+    background-size: cover;
+    border: none;
+    //border: 1px solid;  // debug
+}
 
 // warning for smaller screens!
 @media screen and (max-width:600px){
