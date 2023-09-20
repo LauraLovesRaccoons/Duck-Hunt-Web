@@ -30,6 +30,7 @@ body {
   position: absolute;
   height: 50px;
   width: 50px;
+  cursor: url(../images/cursors/Crosshair\ Orange.cur), auto;
 }
 
 @media screen and (max-width: 600px) {
