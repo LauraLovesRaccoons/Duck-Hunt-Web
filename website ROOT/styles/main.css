@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: none;
+  visibility: hidden;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.88);
+  cursor: not-allowed;
+  padding: 2vh;
+}
+
+.wrapper {
+  height: 95vh;
+  width: 95vw;
+  background-color: transparent;
+  background: url("../images/background/background.png") no-repeat center/cover;
+  cursor: url(../images/cursors/Crosshair\ Gray.cur), auto;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    visibility: visible;
+    display: block;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 7.5rem;
+    color: rgba(245, 245, 245, 0.8);
+  }
+  header p {
+    font-size: 4rem;
+    color: rgba(255, 0, 0, 0.9);
+  }
+}/*# sourceMappingURL=main.css.map */

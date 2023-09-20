@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Desktop First and probably only
+
+// this is needed for the mobile warning message
+header{
+    display: none;
+    visibility: hidden;
+}
+
+// Desktop begin
+
+body{
+    background-color: rgba($color: #000000, $alpha: .88);
+    // height: 95vh;
+    // width: 95vw;
+    cursor: not-allowed;
+    padding: 2vh;
+}
+
+.wrapper{
+    // margin: 1%;
+    // height: 100%;
+    // width: 100%;
+    height: 95vh;
+    width: 95vw;
+    background-color: transparent; // this should be hidden
+    // background-image: url('../images/background/background.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background: url('../images/background/background.png') no-repeat center/cover;
+    cursor: url(../images/cursors/Crosshair\ Gray.cur), auto;
+}
+
+
+
+
+// warning for smaller screens!
+@media screen and (max-width:600px){
+    header{
+        visibility: visible;
+        display: block;
+        text-align: center;
+        h1{
+            font-size: 7.5rem;
+            color: rgba($color: whitesmoke, $alpha: .8);
+        }
+        p{
+            font-size: 4rem;
+            color: rgba($color: red, $alpha: .9);
+        }
+    }
+}
