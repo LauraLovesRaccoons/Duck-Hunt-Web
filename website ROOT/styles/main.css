@@ -23,10 +23,13 @@ body {
   width: 800px;
   border: 1px black solid;
   margin: auto;
+  position: relative;
 }
 
 #duck1 {
-  position: relative;
+  position: absolute;
+  height: 50px;
+  width: 50px;
 }
 
 @media screen and (max-width: 600px) {

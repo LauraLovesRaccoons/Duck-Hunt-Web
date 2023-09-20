@@ -39,10 +39,13 @@ body{
     width: 800px;
     border: 1px black solid;
     margin: auto;
+    position: relative; //needed for the target
 }
 
 #duck1{
-    position: relative;
+    position: absolute; // now it should be bound to it's parent
+    height: 50px;
+    width: 50px;
 }
 
 
