@@ -45,7 +45,7 @@ dogShot.addEventListener("click", function (){
 
 // duck makes a sound when shoot
 let duckShot = document.getElementsByClassName("duckS");
-duckShot.addEventListener("click", function(){
+duckShot.addEventListener("click", function (){
     let duckCaughtSound = new Audio('./sounds/duck-caught.mp3');
     duckCaughtSound.play();
     alert("DUCK");
