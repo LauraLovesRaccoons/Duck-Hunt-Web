@@ -44,10 +44,10 @@ dogShot.addEventListener("click", function (){
 })
 
 // duck makes a sound when shoot
-let duckShot = document.getElementsByClassName("duckS");
+let ducks = document.getElementsByClassName("duckS");   // I have 3 ducks I need a loop
 duckShot.addEventListener("click", function (){
-    let duckCaughtSound = new Audio('./sounds/duck-caught.mp3');
-    duckCaughtSound.play();
+    let duckShotSound = new Audio('./sounds/duck-caught.mp3');
+    duckShotSound.play();
     alert("DUCK");
     score= score+500;
     console.log("Times ducks hit: "+score);
