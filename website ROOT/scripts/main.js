@@ -40,7 +40,7 @@ dogShot.addEventListener("click", function (){
     let dogShotSound = new Audio('./sounds/dog-laughing.mp3');   // I'm in the same folder as index.html
     dogShotSound.play();
     score= score-10000;
-    console.log("Times ducks hit: "+score);
+    console.log("Score: "+score);
 })
 
 // duck makes a sound when shoot
@@ -49,6 +49,6 @@ duckShot.addEventListener("click", function (){
     let duckCaughtSound = new Audio('./sounds/duck-caught.mp3');
     duckCaughtSound.play();
     alert("DUCK");
-    score++;
+    score= score+500;
     console.log("Times ducks hit: "+score);
 })
