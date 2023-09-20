@@ -95,6 +95,20 @@ body{
     //border: 1px solid;  // debug
 }
 
+#bottomBoxes{
+    display: flex;
+    justify-content: space-around;
+    // gap: 10px;
+}
+
+#bulletsBox{}
+
+#targetsHitBox{}
+
+#scoreBox{}
+
+
+
 // warning for smaller screens!
 @media screen and (max-width:600px){
     header{
