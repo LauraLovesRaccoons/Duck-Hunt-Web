@@ -42,8 +42,10 @@ body{
     position: relative; //needed for the target
 }
 
-#duck1{
+.duckS{
     position: absolute; // now it should be bound to it's parent
+    top: 0px;
+    left: 0px;
     height: 50px;
     width: 50px;
     cursor: url(../images/cursors/Crosshair\ Orange.cur), auto;
@@ -53,7 +55,26 @@ body{
     //border: 1px solid;  // debug
 }
 
+#duck1{
+    top: 300px;
+    left: 400px;
+    //background-image: url('../images/sprites/PLACEHOLDER.png');
+    //display: none;
+}
 
+#duck2{
+    top: 100px;
+    left: 600px;
+    //background-image: url('../images/sprites/PLACEHOLDER.png');
+    display: none;
+}
+
+#duck3{
+    top: 50px;
+    left: 50px;
+    //background-image: url('../images/sprites/PLACEHOLDER.png');
+    display: none;
+}
 
 
 // warning for smaller screens!

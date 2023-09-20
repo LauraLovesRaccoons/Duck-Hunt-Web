@@ -26,14 +26,33 @@ body {
   position: relative;
 }
 
-#duck1 {
+.duckS {
   position: absolute;
+  top: 0px;
+  left: 0px;
   height: 50px;
   width: 50px;
   cursor: url(../images/cursors/Crosshair\ Orange.cur), auto;
   background: url("../images/sprites/flying_duck.png") no-repeat;
   background-size: 50px;
   border: none;
+}
+
+#duck1 {
+  top: 300px;
+  left: 400px;
+}
+
+#duck2 {
+  top: 100px;
+  left: 600px;
+  display: none;
+}
+
+#duck3 {
+  top: 50px;
+  left: 50px;
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
