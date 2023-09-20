@@ -24,7 +24,7 @@ function randomPosition(callingAnID){
 }
 
 // this is needed because callingAnID will be empty if I call it w/o arguments
-setInterval(moveDucks, 500)
+setInterval(moveDucks, 1000)
  function moveDucks (){
     randomPosition("duck1");
     randomPosition("duck2");
