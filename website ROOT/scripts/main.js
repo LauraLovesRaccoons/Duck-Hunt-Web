@@ -7,6 +7,21 @@ let posLeft = 0;
 let duck1 = document.getElementById("duck1");
 duck1.style.top = posTop;   // start always at 0
 duck1.style.top = posLeft;  // start always at 0
-duck1.style.top = Math.random()*500 + "px";
-duck1.style.left = Math.random()*700 + "px";
+duck2.style.top = posTop;   // start always at 0
+duck2.style.top = posLeft;  // start always at 0
+duck3.style.top = posTop;   // start always at 0
+duck3.style.top = posLeft;  // start always at 0
 
+randomPosition("duck1");
+randomPosition("duck2");
+randomPosition("duck3");
+
+
+
+// functions
+
+function randomPosition(callingAnID){
+    let insideFunction = document.getElementById(callingAnID);
+    insideFunction.style.top = Math.random()*500 + "px";
+    insideFunction.style.left = Math.random()*700 + "px";
+}
