@@ -31,7 +31,9 @@ body {
   height: 50px;
   width: 50px;
   cursor: url(../images/cursors/Crosshair\ Orange.cur), auto;
-  background: url("../images/sprites/flying_duck.png") no-repeat center/cover;
+  background: url("../images/sprites/flying_duck.png") no-repeat;
+  background-size: 50px;
+  border: none;
 }
 
 @media screen and (max-width: 600px) {
