@@ -135,4 +135,7 @@ body {
     display: none;
     visibility: none;
   }
+  #enableJS {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
