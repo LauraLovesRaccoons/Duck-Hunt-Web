@@ -133,6 +133,17 @@ body{
 }
 
 
+// warning no javascript
+#enableJS{
+    height: 300px;
+    width: 500px;
+    font-size: 2rem;
+    color: red;
+    background-color: darkblue;
+    text-align: left;
+    //display: none;    // gets triggered with JS
+}
+
 
 // warning for smaller screens!
 @media screen and (max-width:600px){

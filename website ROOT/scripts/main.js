@@ -14,7 +14,8 @@ duck2.style.top = posLeft;  // start always at 0
 duck3.style.top = posTop;   // start always at 0
 duck3.style.top = posLeft;  // start always at 0
 
-
+// removes the no javascript warning message:
+document.getElementById('enableJS').style.display='none';
 
 // functions
 
