@@ -23,10 +23,86 @@ body {
   width: 800px;
   border: 1px black solid;
   margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.duckS {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 50px;
+  cursor: url(../images/cursors/Crosshair\ Orange.cur), auto;
+  background: url("../images/sprites/flying_duck.png") no-repeat;
+  background-size: 50px;
+  border: none;
+  z-index: 2;
 }
 
 #duck1 {
-  position: relative;
+  top: 300px;
+  left: 400px;
+}
+
+#duck2 {
+  top: 100px;
+  left: 600px;
+  display: none;
+}
+
+#duck3 {
+  top: 50px;
+  left: 50px;
+  display: none;
+}
+
+#dog {
+  position: absolute;
+  top: 360px;
+  left: 350px;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  cursor: url(../images/cursors/Crosshair\ Purple.cur), auto;
+  background: url("../images/sprites/laughing_dog.png") no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+#bottomBoxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 500px;
+  text-align: center;
+}
+
+#bulletsBox, #targetsHitBox, #scoreBox {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  border: 2px solid #80d010;
+  padding-top: 2px;
+}
+#bulletsBox span, #targetsHitBox span, #scoreBox span {
+  font-weight: 750;
+}
+
+#bulletsBox {
+  height: 50px;
+  width: 100px;
+  color: #3cbcfc;
+}
+
+#targetsHitBox {
+  height: 50px;
+  width: 100px;
+  color: #80d010;
+}
+
+#scoreBox {
+  height: 50px;
+  width: 100px;
+  color: #fcfcfc;
 }
 
 @media screen and (max-width: 600px) {
@@ -42,5 +118,9 @@ body {
   header p {
     font-size: 4rem;
     color: rgba(255, 0, 0, 0.9);
+  }
+  #playground {
+    display: none;
+    visibility: none;
   }
 }/*# sourceMappingURL=main.css.map */
