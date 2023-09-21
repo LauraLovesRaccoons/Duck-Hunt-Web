@@ -21,12 +21,12 @@ document.getElementById('enableJS').style.display='none';
 
 function randomPosition(callingAnID){
     let insideFunction = document.getElementById(callingAnID);
-    insideFunction.style.top = Math.random()*500 + "px";
+    insideFunction.style.top = Math.random()*450 + "px";    // adjustment needed
     insideFunction.style.left = Math.random()*700 + "px";
 }
 
 // this is needed because callingAnID will be empty if I call it w/o arguments
-setInterval(moveDucks, 1000)
+setInterval(moveDucks, 1000)        // set to 10 to quickly spot if the duck is going out of a zone ; normally 1000ms   ; other test value is "10k ms"
  function moveDucks (){
     randomPosition("duck1");
     randomPosition("duck2");
