@@ -75,6 +75,9 @@ body {
   justify-content: space-around;
   margin-top: 500px;
   text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 #bulletsBox, #targetsHitBox, #scoreBox {
