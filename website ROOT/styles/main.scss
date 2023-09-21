@@ -164,4 +164,9 @@ body{
         display: none;
         visibility: none;
     }
+
+    // warning no javascript will NOT display on mobile
+    #enableJS{
+        display: none;    // gets triggered with JS
+    }
 }
