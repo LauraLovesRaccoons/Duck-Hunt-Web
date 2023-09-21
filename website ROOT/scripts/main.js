@@ -42,6 +42,7 @@ dogShot.addEventListener("click", function (){
     dogShotSound.play();
     score= score-10000;
     console.log("Score: "+score);
+    updateScore();  // updates the scoreboard
 })
 
 // duck makes a sound when shoot
@@ -66,8 +67,26 @@ for (let i = 0; i < ducks.length; i++) {
 function duckShot() {
     let duckShotSound = new Audio('./sounds/duck-caught.mp3');
     duckShotSound.play();
-    alert("QUACK!");
+    // alert("QUACK!"); // this will become annoying
     score= score+500;
     console.log("Times ducks hit: "+score);
+    updateScore();  // updates the scoreboard
   }
+
+// displaying score in html and setting it to 0 at the beginning
+let scoreBox = document.getElementById("scoreBox");
+scoreBox.innerHTML= "<span>SCORE<br />" + score + "</span>";
+
+// updates the score
+function updateScore() {
+    scoreBox.innerHTML = "<span>SCORE<br />" + score + "</span>";
+}
+
+// displaying hit in html
+let targetsHitBox = document.getElementById("targetsHitBox");
+targetsHitBox.innerHTML= "<span>HIT<br /></span>";
+
+// displaying shot in html
+let bulletsBox = document.getElementById("bulletsBox");
+bulletsBox.innerHTML= "<span>SHOT<br /></span>";
 
