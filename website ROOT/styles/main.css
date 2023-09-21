@@ -84,6 +84,7 @@ body {
   border-radius: 10px;
   border: 2px solid #80d010;
   padding-top: 2px;
+  letter-spacing: 1px;
 }
 #bulletsBox span, #targetsHitBox span, #scoreBox span {
   font-weight: 750;
@@ -97,8 +98,10 @@ body {
 
 #targetsHitBox {
   height: 50px;
-  width: 100px;
+  width: 350px;
   color: #80d010;
+  text-align: left;
+  padding-left: 10px;
 }
 
 #scoreBox {

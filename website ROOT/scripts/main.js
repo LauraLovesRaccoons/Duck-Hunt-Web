@@ -84,9 +84,9 @@ function updateScore() {
 
 // displaying hit in html
 let targetsHitBox = document.getElementById("targetsHitBox");
-targetsHitBox.innerHTML= "<span>HIT<br /></span>";
+targetsHitBox.innerHTML= "<span>HIT" + "<br />" + "</span>";
 
 // displaying shot in html
 let bulletsBox = document.getElementById("bulletsBox");
-bulletsBox.innerHTML= "<span>SHOT<br /></span>";
+bulletsBox.innerHTML= "<span>SHOT<br />" + "</span>";
 
