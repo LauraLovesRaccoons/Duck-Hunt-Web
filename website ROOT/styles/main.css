@@ -108,6 +108,15 @@ body {
   color: #fcfcfc;
 }
 
+#enableJS {
+  height: 300px;
+  width: 500px;
+  font-size: 2rem;
+  color: red;
+  background-color: darkblue;
+  text-align: left;
+}
+
 @media screen and (max-width: 600px) {
   header {
     visibility: visible;
