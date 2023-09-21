@@ -73,6 +73,36 @@ body {
 #bottomBoxes {
   display: flex;
   justify-content: space-around;
+  margin-top: 500px;
+  text-align: center;
+}
+
+#bulletsBox, #targetsHitBox, #scoreBox {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  border: 2px solid #80d010;
+  padding-top: 2px;
+}
+#bulletsBox span, #targetsHitBox span, #scoreBox span {
+  font-weight: 750;
+}
+
+#bulletsBox {
+  height: 50px;
+  width: 100px;
+  color: #3cbcfc;
+}
+
+#targetsHitBox {
+  height: 50px;
+  width: 100px;
+  color: #80d010;
+}
+
+#scoreBox {
+  height: 50px;
+  width: 100px;
+  color: #fcfcfc;
 }
 
 @media screen and (max-width: 600px) {
